@@ -1,0 +1,281 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+:root {
+    --font-family: 'Arial', sans-serif;
+    --line-height: 1.6;
+    --bg-color: #f8f8f8;
+    --gallery-bg-color: #e0e0e0; /* Background color for the gallery page */
+    --text-color: #333;
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent-color: #fff;
+    --container-width: 1200px;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Container */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+header h1 a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:focus,
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 50px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* Banner Section */
+#banner {
+    text-align: center;
+    background: linear-gradient(135deg, #f06, #f9a);
+    color: var(--accent-color);
+    padding: 100px 20px;
+}
+
+#banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 18px;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Artwork Grid */
+.artwork {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.artwork-item {
+    background: var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.artwork-item:hover {
+    transform: scale(1.05);
+}
+
+.artwork-item img {
+    width: 100%;
+    display: block;
+}
+
+.artwork-item .description {
+    display: none;
+    padding: 15px;
+    background: var(--accent-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artwork-item:hover .description {
+    display: block;
+}
+
+.artwork-item h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.artwork-item p {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Checkbox for image zoom */
+.toggle-description {
+    display: none;
+}
+
+.toggle-description:checked + .description {
+    display: block;
+    position: relative;
+}
+
+.artwork-item:hover .toggle-description + .description {
+    display: block;
+    position: relative;
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+form label {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.social-links {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links a {
+    color: var(--accent-color); /* Set the social links color to white */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Gallery Page Styles */
+body.gallery {
+    background-color: var(--gallery-bg-color);
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    margin-top: 50px; /* Increased margin for better highlight */
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border-radius: 5px;
+}
+
+.cta p {
+    font-size: 20px;
+}
+
+.cta a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    text-decoration: underline;
+}
