@@ -10,7 +10,8 @@
     --font-family: 'Arial', sans-serif;
     --line-height: 1.6;
     --bg-color: #f8f8f8;
-    --gallery-bg-color: #e0e0e0; /* Background color for the gallery page */
+    --gallery-bg-color: #e0e0e0;
+    /* Background color for the gallery page */
     --text-color: #333;
     --primary-color: #333;
     --secondary-color: #555;
@@ -168,12 +169,12 @@ section h2 {
     display: none;
 }
 
-.toggle-description:checked + .description {
+.toggle-description:checked+.description {
     display: block;
     position: relative;
 }
 
-.artwork-item:hover .toggle-description + .description {
+.artwork-item:hover .toggle-description+.description {
     display: block;
     position: relative;
 }
@@ -242,7 +243,8 @@ form button:hover {
 }
 
 .social-links a {
-    color: var(--accent-color); /* Set the social links color to white */
+    color: var(--accent-color);
+    /* Set the social links color to white */
     text-decoration: none;
     font-size: 16px;
 }
@@ -259,7 +261,8 @@ body.gallery {
 /* Call to Action */
 .cta {
     text-align: center;
-    margin-top: 50px; /* Increased margin for better highlight */
+    margin-top: 50px;
+    /* Increased margin for better highlight */
     padding: 20px;
     background-color: var(--primary-color);
     color: var(--accent-color);
