@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art House</title>
-    <!-- Link to external CSS -->
+    <!-- stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Art House</a></h1>
+            <h1><a href="index.html"> Art House</a></h1>
             <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="#about">About Us</a></li>
@@ -55,44 +57,33 @@
             <div class="container">
                 <h2>Art Gallery</h2>
                 <div class="artwork">
-                    <!-- Artwork Item 1 -->
                     <article class="artwork-item">
                         <img src="assets/gallery/pexels-dan-cristian-pădureț-1193743.jpg"
                             alt="Multicolored Abstract Painting">
-                        <div class="description">
-                            <h3>Multicolored Abstract Painting</h3>
-                            <p>In this painting, we can observe a rich and varied color palette: deep purple, intense
-                                red, bright gold, vibrant pink, and hot orange. Each color mixes and overlaps, forming a
-                                dance of pigments that seems to have a life of its own. The textures range from the
-                                softness of pink to the intensity of gold, providing a tactile, almost palpable
-                                experience to the eye.</p>
-                        </div>
+                        <h3>Multicolored Abstract Painting</h3>
+                        <p>In this painting, we can observe a rich and varied color palette: deep purple, intense red,
+                            bright gold, vibrant pink and hot orange. Each color mixes and overlaps, forming a dance of
+                            pigments that seems to have a life of its own. The textures range from the softness of pink
+                            to the intensity of gold, providing a tactile, almost palpable experience to the eye.</p>
                     </article>
-                    <!-- Artwork Item 2 -->
                     <article class="artwork-item">
                         <img src="assets/gallery/pexels-daian-gan-102127.jpg" alt="Shallow Brush">
-                        <div class="description">
-                            <h3>Shallow Brush</h3>
-                            <p>In the center of the image, a skillfully wielded brush mixes brown paint. This seemingly
-                                simple moment represents the meticulous preparation that precedes the creation of a work
-                                of art. The palette, with its splashes of color and strokes, is a testament to the
-                                creative process, where inspiration begins to take shape before being transferred to the
-                                canvas.</p>
-                        </div>
+                        <h3>Shallow Brush</h3>
+                        <p>In the center of the image, a skillfully wielded brush mixes brown paint. This seemingly
+                            simple moment represents the meticulous preparation that precedes the creation of a work of
+                            art. The palette, with its splashes of color and strokes, is a testament to the creative
+                            process, where inspiration begins to take shape before being transferred to the canvas.</p>
                     </article>
-                    <!-- Artwork Item 3 -->
                     <article class="artwork-item">
                         <img src="assets/gallery/pexels-pixabay-164455.jpg" alt="Yellow and Brown House Paint">
-                        <div class="description">
-                            <h3>Yellow and Brown House Paint</h3>
-                            <p>The image shows us the reflection of a row of colorful buildings, their vibrant facades
-                                and perfectly outlined windows beautifully distorted by the ripples of water. The
-                                yellow, red, and orange tones of the buildings blend harmoniously with the soft blue of
-                                the reflected sky, creating a composition that seems straight out of a dream.</p>
-                        </div>
+                        <h3>Yellow and Brown House Paint</h3>
+                        <p>The image shows us the reflection of a row of colorful buildings, their vibrant facades and
+                            perfectly outlined windows beautifully distorted by the ripples of water. The yellow, red
+                            and orange tones of the buildings blend harmoniously with the soft blue of the reflected
+                            sky, creating a composition that seems straight out of a dream.</p>
                     </article>
+                    <!-- Add more artworks here -->
                 </div>
-                <!-- Call to Action -->
                 <div class="cta">
                     <p>For more artworks, <a href="gallery.html">click here</a></p>
                 </div>
@@ -117,13 +108,28 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <ul class="social-links">
-                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page (opens in a new tab)">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in a new tab)">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
             </ul>
             <p>&copy; 2024 Art House. All rights reserved.</p>
         </div>

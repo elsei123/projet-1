@@ -11,7 +11,6 @@
     --line-height: 1.6;
     --bg-color: #f8f8f8;
     --gallery-bg-color: #e0e0e0;
-    /* Background color for the gallery page */
     --text-color: #333;
     --primary-color: #333;
     --secondary-color: #555;
@@ -38,10 +37,9 @@ header {
     background-color: var(--primary-color);
     color: var(--accent-color);
     padding: 20px 0;
-}
 
 header h1 {
-    font-size: 24px;
+    font-size: 40px;
     margin: 0;
     text-align: center;
 }
@@ -74,7 +72,7 @@ nav ul li:last-child {
 nav ul li a {
     color: var(--accent-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 nav ul li a:focus,
@@ -234,8 +232,8 @@ form button:hover {
 }
 
 .social-links li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    margin-right: 15px;
 }
 
 .social-links li:last-child {
@@ -244,13 +242,18 @@ form button:hover {
 
 .social-links a {
     color: var(--accent-color);
-    /* Set the social links color to white */
     text-decoration: none;
     font-size: 16px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.social-links a i {
+    font-size: 35px;
 }
 
 /* Gallery Page Styles */
@@ -262,9 +265,8 @@ body.gallery {
 .cta {
     text-align: center;
     margin-top: 50px;
-    /* Increased margin for better highlight */
     padding: 20px;
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #f06, #f9a);
     color: var(--accent-color);
     border-radius: 5px;
 }
